@@ -126,7 +126,13 @@ function AIContentGenerator() {
 
         {/* Generate Button */}
         <button
-          onClick={generateContentIdeas}
+          onClick={() => {
+            if (!keyword.trim()) {
+              window.alert("Enter a topic :)");
+            } else {
+              generateContentIdeas();
+            }
+          }}
           className="w-full bg-blue-600 text-white font-semibold p-3 rounded-lg mt-4 hover:bg-blue-700 transition disabled:bg-gray-500"
           disabled={loading}
         >
