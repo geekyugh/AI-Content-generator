@@ -5,10 +5,9 @@ import AIContentGenerator from "./components/AIContentGenerator";
 
 function App() {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center bg-white text-gray-300 p-6">
-      {/* Only AI Content Generator */}
+    <>
       <AIContentGenerator />
-    </div>
+    </>
   );
 }
 
