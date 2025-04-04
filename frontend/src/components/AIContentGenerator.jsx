@@ -52,8 +52,8 @@ function AIContentGenerator() {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center bg-white text-gray-300 p-6">
-      <div className="w-full max-w-xl sm:max-w-2xl lg:max-w-4xl bg-gray-800 shadow-lg rounded-xl p-8">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-white text-gray-300 p-6">
+      <div className="w-full max-w-xl sm:max-w-2xl lg:max-w-4xl bg-gray-800 shadow-lg rounded-xl p-6 sm:p-8">
         {/* Header */}
         <h1 className="text-3xl font-bold text-blue-400 text-center">
           ✨ AI Content Idea Generator
@@ -85,7 +85,7 @@ function AIContentGenerator() {
               <button
                 key={index}
                 onClick={() => setKeyword(topic)}
-                className="text-sm bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+                className="text-xs sm:text-sm bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
               >
                 {topic}
               </button>
