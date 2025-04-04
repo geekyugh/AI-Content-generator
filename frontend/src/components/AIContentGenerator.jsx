@@ -34,7 +34,7 @@ function AIContentGenerator() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/generate-ideas",
+        "https://ai-backend-fjsz.onrender.com/generate-ideas",
         { keyword, contentType }
       );
       setContentIdeas(response.data.ideas);
